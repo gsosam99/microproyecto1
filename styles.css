@@ -175,3 +175,44 @@ nav{
     font-weight: 600;
     background-color: chartreuse;
 }
+
+.about{
+    background-color: deeppink;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.about-image{
+    margin: 20px;
+}
+.about-profile{
+    background-color: gold;
+    flex-grow: 2;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    font-size: 20px;
+}
+.profile-left{
+    margin: 10px;
+    padding: 0.2rem;
+}
+.profile-right{
+    margin: 10px;
+    padding: 0.2rem;
+}
+.about-profile span:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0.2rem;
+}
+.about-profile li{
+    margin-left: 50px;
+}

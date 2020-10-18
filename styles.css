@@ -13,14 +13,17 @@ body{
 }
 
 #microproyecto{
-    background-color: darkgreen;
-    border: 1px solid black;
+    background-color: rgb(205, 230, 245);
+    border: 1px solid white;
     padding: 1.5rem;
     width: auto;
     height: auto;
     padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
+}
+.titulo{
+    color: white;
 }
 
 .return a{
@@ -33,7 +36,7 @@ body{
 
 
 nav{
-    background-color: antiquewhite;
+    background-color: royalblue;
     border-radius: 10px;
     padding: 1rem;
     margin: 0.5rem;
@@ -47,7 +50,7 @@ nav{
     justify-content: center;
 }
 .menu-area a{
-    color:black;
+    color:white;
     border-radius: 10px;
     padding: 1rem;
     margin: 0.5rem;
@@ -59,7 +62,7 @@ nav{
     line-height: 30px;
 }
 .menu-area a:hover {
-    background: tomato;
+    background: rgb(44, 73, 158);
     color: #fff;
     font-weight: 400;
     font-size: 18px;
@@ -69,21 +72,67 @@ nav{
     align-self: center;
     justify-self: center;
     font-size: 1rem;
+    color: rgb(44, 73, 158);
+    font-weight: 600;
 }
 
-.hero{
-    background-color: darkgoldenrod;
-    margin: 0;
-}
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+  }
 
-.hero-content img{
+  .slide-container .slide {
+    display: none;
     min-height : 100%;
     min-width : 100%;
-    height: 300px;
-}
+    background-size:100% 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .slide-container .prev,
+  .slide-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .slide-container .prev:hover,
+  .slide-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  .slide-container .prev {
+    left: 2px;
+  }
+  .slide-container .next {
+    right: 2px;
+  }
+  .slide-container .slide.fade {
+    animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  .slide-container .slide img {
+    width: 100%;
+  }
+
 
 .content{
-    background-color: brown;
+    background-color: rgb(205, 230, 245);
     border-radius: 10px;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -93,7 +142,7 @@ nav{
 }
 
 .experience{
-    background-color: burlywood;
+    border: 6px solid black;
     border-radius: 10px;
     padding: 1rem;
     margin: 0.5rem;
@@ -105,8 +154,9 @@ nav{
     align-items: stretch;
 }
 .experience-titulo{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
     letter-spacing: 1px;
     color: white;
     margin-bottom: 10px;
@@ -127,9 +177,9 @@ nav{
 }
 
 .experience-marca{
-    border: 10px;
-    border-color: black;
-    background-color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: royalblue;
     margin: 0.5rem;
     padding: 0.2rem;
     display: flex;
@@ -138,9 +188,9 @@ nav{
     padding: 0.5rem;
 }
 .experience-as{
-    border: 10px;
-    border-color: black;
-    background-color: coral;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: royalblue;
     margin: 0.5rem;
     padding: 0.2rem;
     display: flex;
@@ -149,9 +199,9 @@ nav{
     padding: 0.5rem;
 }
 .experience-real{
-    border: 10px;
-    border-color: black;
-    background-color: rgb(138, 48, 138);
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: royalblue;
     margin: 0.5rem;
     padding: 0.2rem;
     display: flex;
@@ -170,17 +220,18 @@ nav{
     margin-top: 1rem;
 }
 .experience-content a:hover {
-    color: black;
+    color: white;
     font-size: 16px;
     font-weight: 600;
-    background-color: chartreuse;
+    background-color: rgb(44, 73, 158);
 }
 
 .about{
-    background-color: deeppink;
+    background-color:  rgb(205, 230, 245)e;
     border-radius: 10px;
     padding: 1rem;
     margin: 0.5rem;
+    border: 6px solid black;
 }
 .about-content{
     display: flex;
@@ -192,13 +243,14 @@ nav{
     margin: 20px;
 }
 .about-profile{
-    background-color: gold;
+    background-color: white;
     flex-grow: 2;
     padding: 0.5rem;
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
     font-size: 20px;
+    border: 2px solid black;
 }
 .profile-left{
     margin: 10px;
@@ -218,22 +270,51 @@ nav{
 }
 
 .skills{
-    background-color: white;
+    background-color:  rgb(205, 230, 245);
     border-radius: 10px;
     padding: 1rem;
     margin: 0.5rem;
+    border: 6px solid black;
 }
 .skills-content{
     display: flex;
+    flex-wrap: wrap; 
     margin-top: 1rem;
     justify-content: center;
 }
 
+#python{
+    background-color: yellow;
+    border: 2px solid black;
+}
+#java{
+    background-color: red;
+    border: 2px solid black;
+}
+#html{
+    background-color: orange;
+    border: 2px solid black;
+}
+#css{
+    background-color: rgb(0, 191, 255);
+    border: 2px solid black;
+}
+#js{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+#ts{
+    background-color: grey;
+    border: 2px solid black;
+}
+
 .contact{
-    background-color: white;
+    background-color:  rgb(205, 230, 245);
     border-radius: 10px;
     padding: 1rem;
     margin: 0.5rem;
+    border: 6px solid black;
 
 }
 .contact-content{
@@ -264,7 +345,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
 }
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: royalblue;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -272,5 +353,5 @@ input[type=submit] {
     cursor: pointer;
 }
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgb(44, 73, 158);
 }

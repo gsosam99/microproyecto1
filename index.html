@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <script src="./main.js"></script>
     <title>MiniProyecto 1</title>
 </head>
 <body> 
@@ -16,23 +15,29 @@
                     Micro Proyecto 1
                 </div>
                 <div class="menu-area">
-                    <a href="#hero">Inicio</a>
                     <a href="#experience">Experience</a>
                     <a href="#about">About Me</a>
                     <a href="#skills">Skills</a>
                     <a href="#contact">Contact Me</a>
                 </div>
             </nav>
-            <div class="hero" id=hero>
-                    <div class="hero-content">
-                        <div>ACA VA EL SLIDER</div>
-                        <img src="./avila.jpg" alt="Avila Pic">
-                    </div>
-                </div>
+            <div class="slide-container">
+                <div class="slide fade">
+                 <img src='./img1.jpg' alt='' width="1200px" height="300px">
+               </div>
+               <div class="slide fade">
+                <img src='./img2.jpg' alt=''width="1200px" height="300px">
+               </div>
+               <div class="slide fade">
+                <img src='./img3.jpg' alt=''width="1200px" height="300px">
+               </div>
+         
+               <a href="#" class="prev" title="Previous">&#10094</a>
+               <a href="#" class="next" title="Next">&#10095</a>
+             </div>
             <div class="content">
-                
                 <div class="experience" id=experience>
-                    <div class="section-title">PORTAFOLIO </div>
+                    <div class="section-title">EXPERIENCE </div>
                     <div class="experience-content">
                         <div class="experience-marca">
                             <div class="experience-titulo">
@@ -127,6 +132,12 @@
                 <div class="skills" id=skills>
                     <div class="section-title">SKILLS</div>
                     <div class="skills-content">
+                        <div id="javaskill-python"></div>
+                        <div id="javaskill-java"></div>
+                        <div id="javaskill-html"></div>
+                        <div id="javaskill-css"></div>
+                        <div id="javaskill-js"></div>
+                        <div id="javaskill-ts"></div>
                         <img src="./chart.png" alt="Chart" width="500px" height="300px">
                     </div>
                 </div>
@@ -161,5 +172,6 @@
             </div>
         </section>
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>

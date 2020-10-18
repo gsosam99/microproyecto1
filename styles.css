@@ -228,3 +228,49 @@ nav{
     margin-top: 1rem;
     justify-content: center;
 }
+
+.contact{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-content a{
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.contact-mail{
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-form{
+    margin-top: 2rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}

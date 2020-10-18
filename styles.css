@@ -216,3 +216,15 @@ nav{
 .about-profile li{
     margin-left: 50px;
 }
+
+.skills{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.skills-content{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}

@@ -91,3 +91,87 @@ nav{
     flex-direction: column;
     justify-content: space-around;
 }
+
+.experience{
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.experience-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.experience-titulo{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 10px;
+}
+.experience-herramientas{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 10px;
+}
+.experience-fecha{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.experience-marca{
+    border: 10px;
+    border-color: black;
+    background-color: red;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0.5rem;
+}
+.experience-as{
+    border: 10px;
+    border-color: black;
+    background-color: coral;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0.5rem;
+}
+.experience-real{
+    border: 10px;
+    border-color: black;
+    background-color: rgb(138, 48, 138);
+    margin: 0.5rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0.5rem;
+}
+.experience-content a{
+    color:white;
+    border-radius: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 0.5rem;
+    align-self: center;
+    margin-top: 1rem;
+}
+.experience-content a:hover {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: chartreuse;
+}
